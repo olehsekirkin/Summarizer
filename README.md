@@ -9,10 +9,10 @@ In essence, you input a word or a group of words into the code, and it sends the
 Libraries used in this project: requests, BeautifulSoup, csv, sumy, pandas, breadability, setuptools, reportlab.
 
 If you wish to change the number of sentences in the summary:
-Line 34: "summary = summarizer(parser.document, X)"
+Line 32: "summary = summarizer(parser.document, X)"
 
 If you want to change the search term:
-Line 101: "getNewsData("X", min_articles=X)"
+Line 98: "getNewsData("X", min_articles=X)"
 
 If you want to change the ammount of articles it summarizes, it's exactly the same line of code as above.
 
