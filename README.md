@@ -16,7 +16,7 @@ Line 98: "getNewsData("X", min_articles=X)"
 
 If you want to change the ammount of articles it summarizes, it's exactly the same line of code as above.
 
-* Summarizer 2.0 includes the creation of .txt and .pdf directly delivered to your desktop, some error fixes and the ability to choose the ammount of articles you want it to summarize for you.
+* Summarizer 2.0 includes the creation of .txt and .pdf directly delivered to your desktop, some error fixes, code is now longer (but actually shorter and cleaner lol) and the ability to choose the ammount of articles you want it to summarize for you.
 
 # What I Learned
 
