@@ -1,5 +1,5 @@
 # Summarizer
-My first-ever project! A news summarizer designed to help you invest your precious time elsewhere!
+A news summarizer designed to help you invest your precious time elsewhere!
 
 # Description and getting started
 If you have any advice, suggestions, ideas, or anything that can be helpful, or if you're interested in learning about what I've done, feel free to contact me at olehusofa@hotmail.com or any other link on my profile
@@ -20,14 +20,11 @@ If you want to change the ammount of articles it summarizes, it's exactly the sa
 
 # What I Learned
 
-This being my very first personal project, I learned A LOT:
-
 - Web Scraping
 - File manipulation in Python
 - Understanding HTML
 - Working with libraries like BeautifulSoup, requests, pandas, reportlabs
 - API's: their purpose, functionality, and how to use them
-- Developing the right mindset (and not going crazy)
 
 # What's left to be done
 
