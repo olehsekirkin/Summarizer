@@ -88,8 +88,8 @@ def get_news_data(input, min_articles=0):
 
     with open(txt_file_path, "w", encoding="utf-8") as txt_file:
         for result in news_results:
-            txt_file.write(f"Link: {result["Link"]}\n")
-            txt_file.write(f"Summary: {result["Summary"]}\n\n")
+            txt_file.write(f"Link: {result['Link']}\n")
+            txt_file.write(f"Summary: {result['Summary']}\n\n")
 
     print(f"Data with summaries saved to {txt_file_path}")
 
