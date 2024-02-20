@@ -12,15 +12,15 @@ In essence, you input a word or a group of words into the code, and it sends the
 
 Libraries used in this project: requests, BeautifulSoup, sumy, reportlab.
 
-### If you wish to change the number of sentences in the summary:
-"summary = summarizer(parser.document, X)"
+~~### If you wish to change the number of sentences in the summary:~~
+~~"summary = summarizer(parser.document, X)"~~
 
-### If you want to change the search term:
-"getNewsData("X", min_articles=X)"
+~~### If you want to change the search term:~~
+~~"getNewsData("X", min_articles=X)"~~
 
-### If you want to change the ammount of articles it summarizes, it's exactly the same line of code as above.
+~~### If you want to change the ammount of articles it summarizes, it's exactly the same line of code as above.~~
 
-* Summarizer 2.0 includes the creation of .txt and .pdf directly delivered to your desktop, some error fixes, code is now longer (but actually shorter and cleaner lol) and the ability to choose the ammount of articles you want it to summarize for you.
+* Summarizer 2.0 includes the creation of .txt and .pdf directly delivered to your desktop, some error fixes, code is now longer (but actually shorter and cleaner lol) and the ability to choose the ammount of articles you want it to summarize for you. Also now you don't have to touch nothing on the code, all inputs through the console.
 
 ## What I Learned
 
