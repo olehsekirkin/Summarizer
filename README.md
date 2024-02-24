@@ -32,5 +32,4 @@ Libraries used in this project: requests, BeautifulSoup, sumy, reportlab.
 
 ## What's left to be done
 
-~~I still need a way to showcase the information the .csv file creates in a compealing way, I also want the file to be a .pdf (probably?) and open automatically as it creates.~~
-At the moment, the .txt is easier to read than the .pdf so I have to fix that, and there is some URLs that it's failing to "retrieve content from" so that should be fixed too.
+For now I don't know if I can improve anything on the code, the main mission of this project was to start with Python and learn about Web Scraping and I got it done!
