@@ -9,7 +9,7 @@ import nltk
 def summarize_article(url):
     response = requests.get(url)
 
-    if response.status_code != 200: # If it's not response status code 200 something failed, most common 404
+    if response.status_code != 200:
         print(f"Failed to retrieve content from {url}")
         return ""
 
@@ -25,7 +25,7 @@ def summarize_article(url):
     try:
         parser = HtmlParser.from_string(content, url, Tokenizer("english"))
         summarizer = LsaSummarizer()
-        summary = summarizer(parser.document, 5)  # Number of sentences in the summary (can be changed any time)
+        summary = summarizer(parser.document, 5)
         return " ".join([str(sentence) for sentence in summary])
     except Exception as e:
         print(f"Error summarizing {url}: {e}")
@@ -47,7 +47,6 @@ def getNewsData(input):
         link = el.select_one("a")["href"]
 
 
-        # Summarize the article content from the URL
         summarized_content = summarize_article(link)
 
         news_results.append({
@@ -67,4 +66,4 @@ import pandas as pd
 pandacsv = pd.read_csv("C:\\Users\\olehs\\PycharmProjects\\pythonProject10\\NewsSummarizer.csv", encoding='ISO-8859-1')
 print(pandacsv)
 
-getNewsData("Ukraine") # We input what we are looking for on Google News
+getNewsData("Ukraine")
