@@ -1,35 +1,35 @@
-# Summarizer
-A news summarizer designed to help you invest your precious time elsewhere!
+# News Summarizer
 
-<p align="center">
-  <img src="https://i.imgur.com/iJL9wkW.png" alt="Title" width="600px" height="250px">
-</p>
+Python script for summarizing news articles about specific companies. The script scrapes news articles from Google News, summarizes them, and then sends the summaries to OpenAI's ChatGPT for further processing. The summarized data is saved in a text file on the user's desktop.
 
-## Description and getting started
-If you have any advice, suggestions, ideas, or anything that can be helpful, or if you're interested in learning about what I've done, feel free to contact me at olehusofa@hotmail.com or any other link on my profile
+## Features
+- Read Company Data: Reads company names and ticker symbols from an Excel file.
+- Summarize Articles: Scrapes news articles from Google News and summarizes their content.
+- Save Summaries: Saves the summarized news articles in a text file on the user's desktop.
+- ChatGPT Integration: Sends the summarized data to OpenAI's ChatGPT for additional processing.
 
-In essence, you input a word or a group of words into the code, and it sends the request to Google News. The program then scans through the latest news related to your input, summarizing them in X sentences (you can customize the number of sentences). Afterward, you receive both the link to the full article and the summary.
+## Requirements
+Python 3.6 or higher
+pandas
+requests
+BeautifulSoup4
+sumy
+openai
 
-Libraries used in this project: requests, BeautifulSoup, sumy, reportlab.
+## Script Overview
+read_company_data(file_path)
+Reads company data from an Excel file and returns a dictionary with company names and ticker symbols.
 
-~~### If you wish to change the number of sentences in the summary:~~
-~~"summary = summarizer(parser.document, X)"~~
+summarize_article(url)
+Scrapes a news article from the given URL and summarizes its content.
 
-~~### If you want to change the search term:~~
-~~"getNewsData("X", min_articles=X)"~~
+get_news_data(input, company_data)
+Scrapes news articles for the specified company or ticker symbol, summarizes them, and saves the summaries in a text file on the user's desktop.
 
-~~### If you want to change the ammount of articles it summarizes, it's exactly the same line of code as above.~~
+send_text_to_chatgpt(file_path)
+Sends the summarized data to OpenAI's ChatGPT for further processing.
 
-* Summarizer 2.0 includes the creation of .txt and .pdf directly delivered to your desktop, some error fixes, code is now longer (but actually shorter and cleaner lol) and the ability to choose the ammount of articles you want it to summarize for you. Also now you don't have to touch nothing on the code, all inputs through the console.
+main()
+The main function that coordinates the execution of the script.
 
-## What I Learned
-
-- Web Scraping
-- File manipulation in Python
-- Understanding HTML
-- Working with libraries like BeautifulSoup, requests, reportlabs, sumy
-- API's: their purpose, functionality, and how to use them
-
-## What's left to be done
-
-For now I don't know if I can improve anything on the code, the main mission of this project was to start with Python and learn about Web Scraping and I got it done!
+### Happy summarizing! If you have any questions or need further assistance, please don't hesitate to contact me.
